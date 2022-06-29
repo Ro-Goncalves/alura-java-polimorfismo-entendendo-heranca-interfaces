@@ -1,29 +1,29 @@
-# Java Polimorfismo: Entenda Herança E Interfaces
+# Java Polimorfismo: Entenda Heranï¿½a E Interfaces
 
-Esse é o meu terceiro curso em Java, estou estudando a formação Java E Orientação A Objetos.
+Esse Ã© o meu terceiro curso em Java, estou estudando a formaÃ§Ã£o Java E OrientaÃ§Ã£o Ã€ Objetos.
 
-* Link da formação: https://www.alura.com.br/formacao-java
+* Link da formaÃ§Ã£o: https://www.alura.com.br/formacao-java
 * Link do curso: https://www.alura.com.br/curso-online-java-heranca-interfaces-polimorfismo
 
 Leituras recomendadas:
 * Robert C Martin - Clean Code
 
-Implementação daquilo que estou aprendendo:
-* Aplicarei aquilo que aprendi no Package `Biblioteca` 
-* A descrição do projeto pode ser vista à baixo
+ImplementaÃ§Ã£o daquilo que estou aprendendo:
+* Aplicarei aquilo que aprendi no Package `biblioteca` 
+* A descriÃ§Ã£o do projeto pode ser vista Ã  baixo
 
 # Projeto Biblioteca
 Em nossa biblioteca precisamos do cadastro para leitores e escritores, eles compartilharam alguns atributos em comum.
 
-## Documentação das Classes
+## Documentaï¿½ï¿½o das Classes
 
-#### Pessoa
+### Pessoa
 Atributos:
 * `nome` - Primeiro nome da pessoa
 * `sobrenome` - Demais nomes
 
-Validações:
-* O atributo `nome` **não pode** permitir a insersão de duas palavras
+Validaï¿½ï¿½es:
+* O atributo `nome` **nÃ£o pode** permitir a insersÃ£o de duas palavras
 
 ### Leitor
 Atributos:
@@ -32,5 +32,5 @@ Atributos:
 
 ### Escritor
 Atributos:
-* `possuiReview` - Identifica se já foi escrito um review sobre o escritor
+* `possuiReview` - Identifica se jÃ¡ foi escrito um review sobre o escritor
 * `numeroDeLivros` - Identifica a quantidade de livros do escritor na biblioteca
