@@ -1,4 +1,4 @@
-# Java Polimorfismo: Entenda Heran�a E Interfaces
+# Java Polimorfismo: Entenda Herança E Interfaces
 
 Esse é o meu terceiro curso em Java, estou estudando a formação Java E Orientação À Objetos.
 
@@ -15,14 +15,14 @@ Implementação daquilo que estou aprendendo:
 # Projeto Biblioteca
 Em nossa biblioteca precisamos do cadastro para leitores e escritores, eles compartilharam alguns atributos em comum.
 
-## Documenta��o das Classes
+## Documentação das Classes
 
 ### Pessoa
 Atributos:
 * `nome` - Primeiro nome da pessoa
 * `sobrenome` - Demais nomes
 
-Valida��es:
+Validações:
 * O atributo `nome` **não pode** permitir a insersão de duas palavras
 
 ### Leitor
