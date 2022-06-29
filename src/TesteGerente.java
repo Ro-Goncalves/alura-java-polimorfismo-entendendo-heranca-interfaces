@@ -4,7 +4,7 @@ public class TesteGerente {
 	public static void main(String[] args) {
 		Gerente gerente = new Gerente();
 		
-		gerente.setNome("Rodrigo Gonçalves");
+		gerente.setNome("Rodrigo Gonï¿½alves");
 		gerente.setCpf("123.123.123-12");
 		gerente.setSalario(5000);
 		
@@ -16,6 +16,8 @@ public class TesteGerente {
 		gerente.setSenha(222);
 		autentica = gerente.autentica(222);		
 		System.out.println(autentica);
+		
+		System.out.println(gerente.getBonificacao());
 
 	}
 
