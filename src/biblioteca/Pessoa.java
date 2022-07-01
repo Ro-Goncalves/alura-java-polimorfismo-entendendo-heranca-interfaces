@@ -2,18 +2,32 @@ package biblioteca;
 
 public class Pessoa {
 	/*
-	 * Quanto existir algum erro, iremos retornar o cÛdigo 999 no inicio da String 
+	 * Quanto existir algum erro, iremos retornar o c√≥digo 999 no inicio da String 
 	 */
 	private String nome;
 	private String sobrenome;
+	private double pontuacao;
+	
+		
+	public double getPontuacaoComBonus() {
+		return this.pontuacao * 0.1;
+	}
+	
+	public double getPontuacao() {
+		return this.pontuacao;
+	}
+	
+	public void setPontuacao(double pontuacao) {
+		this.pontuacao = pontuacao;
+	}
 	
 	
 	public String getNome() {
-		return nome;
+		return this.nome;
 	}
 	public String setNome(String nome) {
 		if(nome.contains(" ")) {
-			return "999@Nome Inv·lido, inserir um novo";
+			return "999@Nome Inv√°lido, inserir um novo";
 		} else {
 			this.nome = nome;
 			return "000@Nome gravado.";
@@ -21,7 +35,7 @@ public class Pessoa {
 		
 	}
 	public String getSobrenome() {
-		return sobrenome;
+		return this.sobrenome;
 	}
 	public void setSobrenome(String sobrenome) {
 		this.sobrenome = sobrenome;

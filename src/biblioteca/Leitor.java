@@ -18,5 +18,7 @@ public class Leitor extends Pessoa{
 		this.status = status;
 	}
 	
-	
+	public double getPontuacaoComBonus() {
+		return super.getPontuacao() * 0.4;
+	}
 }
