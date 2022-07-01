@@ -16,6 +16,9 @@ public class TesteReferencias {
 		EditorVideo editor = new EditorVideo();
 		editor.setSalario(2500);
 		
+		Designer designer = new Designer();
+		designer.setSalario(2000);
+		
 		//Criando um gerente com o tipo mais generico. Ao contrário não funciona
 		//Nesse caso ele criará um funcionario, o copilador olha o tipo
 		Funcionario fakeGerente = new Gerente();
@@ -27,6 +30,7 @@ public class TesteReferencias {
 		controle.registra(gerente);
 		controle.registra(funcionario);
 		controle.registra(editor);
+		controle.registra(designer);
 		
 		System.out.println(controle.getSoma());
 
