@@ -8,6 +8,11 @@ public class Pessoa {
 	private String sobrenome;
 	private double pontuacao;
 	
+	public String getApresentacao() {
+		System.out.println("Classe Pessoa:");
+		return this.sobrenome + ", " + this.nome + ". Pontuação: " + (this.getPontuacao() + this.getPontuacaoComBonus());
+	}
+	
 		
 	public double getPontuacaoComBonus() {
 		return this.pontuacao * 0.1;

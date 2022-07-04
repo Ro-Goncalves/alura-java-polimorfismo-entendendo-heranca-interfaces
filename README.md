@@ -8,6 +8,12 @@ Esse é o meu terceiro curso em Java, estou estudando a formação Java E Orient
 Leituras recomendadas:
 * Robert C Martin - Clean Code
 
+Links importantes
+* Sobre polimorfismo
+*		https://www.devmedia.com.br/uso-de-polimorfismo-em-java/26140
+*		http://www.universidadejava.com.br/java/java-polimorfismo/
+*		https://www.w3schools.com/java/java_polymorphism.asp
+
 Implementação daquilo que estou aprendendo:
 * Aplicarei aquilo que aprendi no Package `biblioteca` 
 * A descrição do projeto pode ser vista à baixo
@@ -23,6 +29,16 @@ sobre a sua pontuação. Se ele for um leitor, ganha 30% além dos 10%, ou seja 
 a pontuação do cadastro de usuário. 
 Se for escritor 50%, mais 50% sobre o bonus do cadastro de usuário. 
 
+```
+Agora tentarei criar um exemplo para polimorfismo
+```
+
+Toda classe deve conter um método que apresente o objeto que ela contém, retornando 
+o um String com o seguinte exemplo:
+```java
+sobrenome + ", " + nome + ". Pontuação: " + pontuacaoComBonus
+```
+Para evitar copiar e colar, criar uma classe separada que implemente isso. 
 
 ## Documentação das Classes
 
@@ -34,6 +50,7 @@ Atributos:
 
 Funções:
 * `getPontuacaoComBonus` - retorna a pontuação com o bonus da classe
+* `getApresentacao` - retorna a mensagem de apresentação da classe
 
 Validações:
 * O atributo `nome` **não pode** permitir a insersão de duas palavras
@@ -45,6 +62,7 @@ Atributos:
 
 Funções:
 * `getPontuacaoComBonus` - retorna a pontuação com o bonus da classe
+* `getApresentacao` - retorna a mensagem de apresentação da classe
 
 ### Escritor
 Atributos:
@@ -53,3 +71,8 @@ Atributos:
 
 Funções:
 * `getPontuacaoComBonus` - retorna a pontuação com o bonus da classe
+* `getApresentacao` - retorna a mensagem de apresentação da classe
+
+### Apresentação
+Funções:
+* `getApresentacao` - retorna a mensagem de apresentação da pessoa que foi passada como parâmetro
