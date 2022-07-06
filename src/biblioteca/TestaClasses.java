@@ -3,40 +3,39 @@ package biblioteca;
 public class TestaClasses {
 
 	public static void main(String[] args) {
-		Leitor leitor = new Leitor();
-		Escritor escritor = new Escritor();
+		Leitor leitor = new Leitor("Rodrigo Gon√ßalves", "Gon√ßalves");
+		Escritor escritor = new Escritor("Arthur", "Connan Doyle");
 		String setNome;		
 		
-		System.out.println("Testando ValidaÁ„o EspaÁo: Leitor - Pessoa");
-		setNome = leitor.setNome("Rodrigo GonÁalves");			
+		System.out.println("Testando Valida√ß√£o: Leitor - Pessoa");
+		setNome = leitor.setNome("Rodrigo Gon√ßalves");			
 		String[] retornoSetNome = setNome.split("@");
 		
 		if(retornoSetNome[0].equals("999")) {
-			System.out.println("Mensagem de erro: " + retornoSetNome[1]);
-			System.out.println("Nome inserido: " + leitor.getNome());
+			System.out.println("Mensagem de erro: " + retornoSetNome[1]);			
 		} 
 		
 		System.out.println("");
-		System.out.println("InserÁ„o Correta: Leitor-Pessoa");	
+		System.out.println("Inser√ß√£o Correta: Leitor-Pessoa");	
 		leitor.setNome("Rodrigo");
-		leitor.setSobrenome("GonÁalves");
+		leitor.setSobrenome("Gon√ßalves");
 		
 		System.out.println("Atributos Leitor-Pessoa: Nome - " + leitor.getNome() + "; Sobrenome - " + leitor.getSobrenome());
 		
-		System.out.println("InserÁ„o Correta: Leitor");
+		System.out.println("Insers√£o Correta: Leitor");
 		leitor.setStatus("Ativo");
 		leitor.setSenha("1234");
 		
 		System.out.println("Atributos Leitor: Senha - " + leitor.getSenha() + "; Status - " + leitor.getStatus());
 		
 		System.out.println("");
-		System.out.println("InserÁ„o Correta: Escritor-Pessoa");	
+		System.out.println("Insers√£oo Correta: Escritor-Pessoa");	
 		escritor.setNome("Arthur");
 		escritor.setSobrenome("Connan Doyle");
 		
 		System.out.println("Atributos Escritor-Pessoa: Nome - " + escritor.getNome() + "; Sobrenome - " + escritor.getSobrenome());
 		
-		System.out.println("InserÁ„o Correta: Ecritor");
+		System.out.println("Insers√£o Correta: Ecritor");
 		escritor.setPossuiReview(true);
 		escritor.setNumeroDeLivros(10);
 		

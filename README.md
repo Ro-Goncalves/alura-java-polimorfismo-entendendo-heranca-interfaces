@@ -19,26 +19,28 @@ Implementação daquilo que estou aprendendo:
 * A descrição do projeto pode ser vista à baixo
 
 # Projeto Biblioteca
+
+#### Aplicando o conceito de herança
 Em nossa biblioteca precisamos do cadastro para leitores e escritores, eles compartilharam alguns atributos em comum.
-```
-A ideia dessa parte é criar algo para trabalhar com os conceitos de super class e sobrescrita
-```
+
+#### Aplicando o conceito de sobrescrita e a utilização do super
 Como o número de usuários está crescendo, pensei em criar algo que avalie o empenho 
 dos usuários dentro da plataforma. Por possuir um cadastro o usuário ganha 10% de bonus 
 sobre a sua pontuação. Se ele for um leitor, ganha 30% além dos 10%, ou seja 40% sobre 
 a pontuação do cadastro de usuário. 
 Se for escritor 50%, mais 50% sobre o bonus do cadastro de usuário. 
 
-```
-Agora tentarei criar um exemplo para polimorfismo
-```
-
+#### Aplicando o conceito de polimorfismo
 Toda classe deve conter um método que apresente o objeto que ela contém, retornando 
-o um String com o seguinte exemplo:
+o um String com o seguinte exemplo
 ```java
 sobrenome + ", " + nome + ". Pontuação: " + pontuacaoComBonus
 ```
 Para evitar copiar e colar, criar uma classe separada que implemente isso. 
+
+#### Aplicando o conceito sobre herança de construtores
+Chefe: Nosso projeto está ficando legal, agora quero que seja obrigatório informar o 
+nome e sobrenome das pessoas que forem cadastradas em nossa base. 
 
 ## Documentação das Classes
 
@@ -55,6 +57,9 @@ Funções:
 Validações:
 * O atributo `nome` **não pode** permitir a insersão de duas palavras
 
+Construtores:
+* `Pessoa` - recebe nome e sobrenome
+
 ### Leitor
 Atributos:
 * `senha` - Senha do leitor
@@ -64,6 +69,9 @@ Funções:
 * `getPontuacaoComBonus` - retorna a pontuação com o bonus da classe
 * `getApresentacao` - retorna a mensagem de apresentação da classe
 
+Construtores:
+* `Leitor` - recebe nome e sobrenome
+
 ### Escritor
 Atributos:
 * `possuiReview` - Identifica se já foi escrito um review sobre o escritor
@@ -72,6 +80,9 @@ Atributos:
 Funções:
 * `getPontuacaoComBonus` - retorna a pontuação com o bonus da classe
 * `getApresentacao` - retorna a mensagem de apresentação da classe
+
+Construtores:
+* `Escritor` - recebe nome e sobrenome
 
 ### Apresentação
 Funções:

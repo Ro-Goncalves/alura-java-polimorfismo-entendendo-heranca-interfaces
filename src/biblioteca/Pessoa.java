@@ -1,12 +1,14 @@
 package biblioteca;
 
-public class Pessoa {
-	/*
-	 * Quanto existir algum erro, iremos retornar o código 999 no inicio da String 
-	 */
+public class Pessoa {	
 	private String nome;
 	private String sobrenome;
 	private double pontuacao;
+	
+	public Pessoa(String nome, String sobrenome) {
+		this.nome = nome;
+		this.sobrenome = sobrenome;
+	}
 	
 	public String getApresentacao() {
 		System.out.println("Classe Pessoa:");
