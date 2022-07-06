@@ -2,17 +2,19 @@
 
 Esse é o meu terceiro curso em Java, estou estudando a formação Java E Orientação À Objetos.
 
-* Link da formação: https://www.alura.com.br/formacao-java
-* Link do curso: https://www.alura.com.br/curso-online-java-heranca-interfaces-polimorfismo
+* [Link da formação](https://www.alura.com.br/formacao-java).
+* [Link do curso](https://www.alura.com.br/curso-online-java-heranca-interfaces-polimorfismo).
 
 Leituras recomendadas:
 * Robert C Martin - Clean Code
 
 Links importantes
-* Sobre polimorfismo
-*		https://www.devmedia.com.br/uso-de-polimorfismo-em-java/26140
-*		http://www.universidadejava.com.br/java/java-polimorfismo/
-*		https://www.w3schools.com/java/java_polymorphism.asp
+### Sobre Herança
+
+### Sobre Polimorfismo
+*	https://www.devmedia.com.br/uso-de-polimorfismo-em-java/26140
+*	http://www.universidadejava.com.br/java/java-polimorfismo/
+*	https://www.w3schools.com/java/java_polymorphism.asp
 
 Implementação daquilo que estou aprendendo:
 * Aplicarei aquilo que aprendi no Package `biblioteca` 
