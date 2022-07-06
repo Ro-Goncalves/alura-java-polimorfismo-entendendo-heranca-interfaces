@@ -31,6 +31,6 @@ public class Escritor extends Pessoa{
 	}
 	
 	public double getPontuacaoComBonus() {
-		return ((super.getPontuacao() * 0.5) + (super.getPontuacaoComBonus() * 0.5));
+		return super.getPontuacao() * 0.5;
 	}
 }

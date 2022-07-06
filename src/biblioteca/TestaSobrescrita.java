@@ -5,14 +5,14 @@ public class TestaSobrescrita {
 	public static void main(String[] args) {
 		Leitor leitor = new Leitor("Rodrigo", "Leitor");
 		Escritor escritor = new Escritor("Rodrigo", "Escritor");
-		Pessoa pessoa = new Pessoa("Rodrigo", "Pessoa");
+		//Pessoa pessoa = new Pessoa("Rodrigo", "Pessoa");
 		
 		//pessoa.setNome("Rodrigo");
 		//pessoa.setSobrenome("Pessoa");
-		pessoa.setPontuacao(100);
+		//pessoa.setPontuacao(100);
 		
-		System.out.println(pessoa.getSobrenome() + "   - " + pessoa.getNome() + 
-				": Pontos com bonificação - " + pessoa.getPontuacaoComBonus());
+		//System.out.println(pessoa.getSobrenome() + "   - " + pessoa.getNome() + 
+		//		": Pontos com bonificação - " + pessoa.getPontuacaoComBonus());
 		
 		//leitor.setNome("Rodrigo");
 		//leitor.setSobrenome("Leitor");

@@ -1,6 +1,6 @@
 package biblioteca;
 
-public class Pessoa {	
+public abstract class Pessoa {	
 	private String nome;
 	private String sobrenome;
 	private double pontuacao;
@@ -16,9 +16,7 @@ public class Pessoa {
 	}
 	
 		
-	public double getPontuacaoComBonus() {
-		return this.pontuacao * 0.1;
-	}
+	public abstract double getPontuacaoComBonus();
 	
 	public double getPontuacao() {
 		return this.pontuacao;
