@@ -9,9 +9,9 @@ public class TesteReferencias {
 		
 		System.out.println(nomeGerente);
 		
-		Funcionario funcionario = new Funcionario();
-		funcionario.setNome("Funcionário Nome");
-		funcionario.setSalario(2000);
+		//Funcionario funcionario = new Funcionario();
+		//funcionario.setNome("Funcionário Nome");
+		//funcionario.setSalario(2000);
 		
 		EditorVideo editor = new EditorVideo();
 		editor.setSalario(2500);
@@ -28,7 +28,7 @@ public class TesteReferencias {
 		
 		ControleBonificacao controle = new ControleBonificacao();
 		controle.registra(gerente);
-		controle.registra(funcionario);
+		//controle.registra(funcionario);
 		controle.registra(editor);
 		controle.registra(designer);
 		

@@ -8,13 +8,13 @@ Esse é o meu terceiro curso em Java, estou estudando a formação Java E Orient
 Leituras recomendadas:
 * Robert C Martin - Clean Code
 
-Links importantes
+## Links importantes
 ### Sobre Herança
 
 ### Sobre Polimorfismo
-*	https://www.devmedia.com.br/uso-de-polimorfismo-em-java/26140
-*	http://www.universidadejava.com.br/java/java-polimorfismo/
-*	https://www.w3schools.com/java/java_polymorphism.asp
+*	[DEVMEDIA - Uso de polimorfismo em java](https://www.devmedia.com.br/uso-de-polimorfismo-em-java/26140).
+*	[UNIVERSIDADEJAVA - Java polimorfismo](http://www.universidadejava.com.br/java/java-polimorfismo/).
+*	[W3SCHOOLS - Java plymorphism](https://www.w3schools.com/java/java_polymorphism.asp).
 
 Implementação daquilo que estou aprendendo:
 * Aplicarei aquilo que aprendi no Package `biblioteca` 
