@@ -1,5 +1,5 @@
 
-public class Gerente extends FuncionarioAutenticavel{	
+public class Gerente extends Autenticavel{	
 	
 	public double getBonificacao() {
 		System.out.println("Bonificação do gerente.");

@@ -1,5 +1,5 @@
 
-public class Administrator extends FuncionarioAutenticavel{
+public class Administrator extends Autenticavel{
 
 	@Override
 	public double getBonificacao() {		
