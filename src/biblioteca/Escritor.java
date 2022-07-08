@@ -1,6 +1,6 @@
 package biblioteca;
 
-public class Escritor extends Pessoa{
+public class Escritor extends Pessoa implements Menus{
 	private boolean possuiReview;
 	private int numeroDeLivros;
 	
@@ -32,5 +32,10 @@ public class Escritor extends Pessoa{
 	
 	public double getPontuacaoComBonus() {
 		return super.getPontuacao() * 0.5;
+	}
+
+	@Override
+	public String MenusTelaInicial() {		
+		return "Meus Livros; Fórum";
 	}
 }

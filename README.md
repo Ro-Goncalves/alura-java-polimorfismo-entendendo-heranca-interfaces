@@ -6,7 +6,7 @@ Esse é o meu terceiro curso em Java, estou estudando a formação Java E Orient
 * [Link do curso](https://www.alura.com.br/curso-online-java-heranca-interfaces-polimorfismo).
 
 Leituras recomendadas:
-* Robert C Martin - Clean Code
+* Robert C Martin - Clean Code.
 
 ## Links importantes
 ### Sobre Herança
@@ -17,8 +17,8 @@ Leituras recomendadas:
 *	[W3SCHOOLS - Java plymorphism](https://www.w3schools.com/java/java_polymorphism.asp).
 
 Implementação daquilo que estou aprendendo:
-* Aplicarei aquilo que aprendi no Package `biblioteca` 
-* A descrição do projeto pode ser vista à baixo
+* Aplicarei aquilo que aprendi no Package `biblioteca`.
+* A descrição do projeto pode ser vista à baixo.
 
 # Projeto Biblioteca
 
@@ -47,48 +47,61 @@ existir uma "pessoa" em nosso sistema. O ideal seria termos somente leitores e e
 E estou repensando a pontuação bonus, ninguém deve ter 10% de bonus por ter um cadastro, 
 mas todos devem possuir os bonus anteriores. 
 
+#### Aplicando o conceito de interfaces
+`Chefe:` Muito bom nosso cadastro. Agora quero seria interessante começarmos a pensar 
+em alguma tela. Algo que podemos fazer é cada usuário possuir menus específicos na 
+tela principal.
+
 ## Documentação das Classes
 
 ### Pessoa abstract
 Atributos:
-* `nome` - Primeiro nome da pessoa
-* `sobrenome` - Demais nomes
+* `nome` - Primeiro nome da pessoa.
+* `sobrenome` - Demais nomes.
 * `pontuacao` - pontuação ganha dentro da biblioteca. 
 
 Funções:
-* `getPontuacaoComBonus` - `abstract` - retorna a pontuação com o bonus da classe
-* `getApresentacao` - retorna a mensagem de apresentação da classe
+* `getPontuacaoComBonus` - `abstract` - retorna a pontuação com o bonus da classe.
+* `getApresentacao` - retorna a mensagem de apresentação da classe.
 
 Validações:
-* O atributo `nome` **não pode** permitir a insersão de duas palavras
+* O atributo `nome` **não pode** permitir a insersão de duas palavras.
 
 Construtores:
-* `Pessoa` - recebe nome e sobrenome
+* `Pessoa` - recebe nome e sobrenome.
 
-### Leitor
+### Leitor extends Pessoa implements Menus
 Atributos:
-* `senha` - Senha do leitor
-* `status` - Status atual do leitor
+* `senha` - Senha do leitor.
+* `status` - Status atual do leitor.
 
 Funções:
-* `getPontuacaoComBonus` - retorna a pontuação com o bonus da classe
-* `getApresentacao` - retorna a mensagem de apresentação da classe
+* `getPontuacaoComBonus` - retorna a pontuação com o bonus da classe.
+* `getApresentacao` - retorna a mensagem de apresentação da classe.
+* `MenusTelaInicial` - implementação do método abstrado de **Menu**.
 
 Construtores:
-* `Leitor` - recebe nome e sobrenome
+* `Leitor` - recebe nome e sobrenome.
 
-### Escritor
+### Escritor extends Pessoa implements Menus
 Atributos:
-* `possuiReview` - Identifica se já foi escrito um review sobre o escritor
-* `numeroDeLivros` - Identifica a quantidade de livros do escritor na biblioteca
+* `possuiReview` - Identifica se já foi escrito um review sobre o escritor.
+* `numeroDeLivros` - Identifica a quantidade de livros do escritor na biblioteca.
 
 Funções:
-* `getPontuacaoComBonus` - retorna a pontuação com o bonus da classe
-* `getApresentacao` - retorna a mensagem de apresentação da classe
+* `getPontuacaoComBonus` - retorna a pontuação com o bonus da classe.
+* `getApresentacao` - retorna a mensagem de apresentação da classe.
+* `MenusTelaInicial` - implementação do método abstrado de **Menu**.
 
 Construtores:
-* `Escritor` - recebe nome e sobrenome
+* `Escritor` - recebe nome e sobrenome.
 
 ### Apresentação
 Funções:
-* `getApresentacao` - retorna a mensagem de apresentação da pessoa que foi passada como parâmetro
+* `getApresentacao` - retorna a mensagem de apresentação da pessoa que foi passada como parâmetro.
+
+### Menu interface
+* `MenusTelaInicial` - retorna os menus que os objetos da classe podem acessar.
+
+### TelaInicial
+* `Menus` - demonstra os menus que um objeto pode acessar.

@@ -1,6 +1,6 @@
 package biblioteca;
 
-public class Leitor extends Pessoa{
+public class Leitor extends Pessoa implements Menus{
 	private String senha;
 	private String status; //Ativo;Inativo
 	
@@ -27,5 +27,10 @@ public class Leitor extends Pessoa{
 	
 	public double getPontuacaoComBonus() {
 		return super.getPontuacao() * 0.4;
+	}
+	
+	@Override
+	public String MenusTelaInicial() {		
+		return "Perfil;Livros";
 	}
 }
